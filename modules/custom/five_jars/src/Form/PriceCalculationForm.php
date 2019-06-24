@@ -108,7 +108,7 @@ class PriceCalculationForm extends FormBase {
       $response->addCommand(new HtmlCommand('.calculation-result-message', ''));
       return $response;
     }
-
+    $response->addCommand(new HtmlCommand('.age-validation-message', ''));
     $response->addCommand(new HtmlCommand('.calculation-result-message', 'Total price: $' . $this->calculatePrice($form_state->getValue('age'), $form_state->getValue('car_size'))));
 
     return $response;

@@ -31,7 +31,9 @@ trait PriceCalculationTrait {
     $Kage = 0;
     $Kcar_size = 1;
 
-    // If we would have
+    // If we would have alot more options I would consider making
+    // some sort of mapping array or similar in logic to make things prettier.
+    // But I think for a few options this code will do the job.
     if ($age == '20-24') {
       $Kage = 0.2;
     }
