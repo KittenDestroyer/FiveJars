@@ -1,0 +1,6 @@
+five_jars.price_calculation_config_form:
+  title: 'Price calculation configuration'
+  route_name: five_jars.price_calculation_config_form
+  description: 'Configuration page for price calculation form'
+  parent: system.admin_config_system
+  weight: 99

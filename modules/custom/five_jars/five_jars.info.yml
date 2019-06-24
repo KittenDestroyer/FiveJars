@@ -1,0 +1,6 @@
+name: Five Jars Module
+description: Test module to build configurable form
+package: Custom
+type: module
+version: 1.0
+core: 8.x

@@ -1,0 +1,8 @@
+name: lando-drupal8
+recipe: drupal8
+config:
+  webroot: .
+  php: 7.2
+  xdebug: true
+  config:
+    php: .lando.php.ini

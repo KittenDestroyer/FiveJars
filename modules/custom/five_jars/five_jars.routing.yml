@@ -1,0 +1,33 @@
+entity.price_calculation.canonical:
+  path: '/price-calculation/{price_calculation}'
+  defaults:
+    _entity_view: 'price_calculation'
+    _title: 'PriceCalculation content'
+  requirements:
+    _permission: 'view content'
+
+entity.price_calculation.collection:
+  path: '/price-calculation/list'
+  defaults:
+    _entity_list: 'price_calculation'
+    _title: 'PriceCalculation list'
+  requirements:
+    _permission: 'view content'
+
+entity.price_calculation.delete_form:
+  path: '/price-calculation/{price_calculation}/delete'
+  defaults:
+    _entity_form: price_calculation.delete
+    _title: 'Delete price_calculation'
+  requirements:
+    _permission: 'access administration pages'
+
+five_jars.price_calculation_config_form:
+  path: '/admin/config/five-jars/price-calculation-config'
+  defaults:
+    _form: '\Drupal\five_jars\Form\PriceCalculationConfigForm'
+    _title: 'PriceCalculationConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
